@@ -1,2 +1,29 @@
 # ABCnet
 Adversarial Bias Correction Network for Infant Brain MR Images
+Our work is modified based on 3d-pix2pix-CycleGAN "https://github.com/neoamos/3d-pix2pix-CycleGAN".
+
+## How to use it
+### Prerequisites
+- Linux
+- NVIDIA GPU with at least 8Gb memory
+- CUDA CuDNN
+
+### Python Dependencies
+- python (3.6)
+- pytorch (0.4.1+)
+- torchvision (0.2.1+)
+- tensorboardx (1.6+)
+
+### Data preparation
+Resample and convert the input files into npy format with size of 256x256x256.
+
+### Train
+Modify the [train.py] file to match the training data in your own path. Then, run:
+```
+python train.py --dataroot /training_data_folder --name project_name --model pix2pix3d --direction AtoB --dataset_mode unaligned --input_nc 1 --output_nc 1 --gpu_ids 0
+```
+
+### Test
+
+```
+python test.py --dataroot /data_folder --name project_name --model pix2pix3d --direction AtoB --dataset_mode unaligned --input_nc 1 --output_nc 1 --gpu_ids 0
