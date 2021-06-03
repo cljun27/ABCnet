@@ -19,7 +19,7 @@ Our work is modified based on 3d-pix2pix-CycleGAN "https://github.com/neoamos/3d
 Resample and convert the input files into npy format with size of 256x256x256.
 
 ### Train
-Modify the [train.py] file to match the training data in your own path. Then, run:
+Modify the [train.py](https://github.com/cljun27/ABCnet/blob/main/train.py) file to match the training data in your own path. Then, run:
 ```
 python train.py --dataroot /training_data_folder --name project_name --model pix2pix3d --direction AtoB --dataset_mode unaligned --input_nc 1 --output_nc 1 --gpu_ids 0
 ```
