@@ -1,5 +1,6 @@
 # ABCnet
-Adversarial Bias Correction Network for Infant Brain MR Images
+Adversarial Bias Correction Network for Infant Brain MR Images.
+
 Our work is modified based on 3d-pix2pix-CycleGAN "https://github.com/neoamos/3d-pix2pix-CycleGAN".
 
 ## How to use it
