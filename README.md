@@ -3,6 +3,9 @@ Adversarial Bias Correction Network for Infant Brain MR Images.
 
 Our work is modified based on 3d-pix2pix-CycleGAN "https://github.com/neoamos/3d-pix2pix-CycleGAN".
 
+## Architecture
+![ABCnet](https://github.com/cljun27/ABCnet/blob/main/images/arc_j3.png).
+
 ## How to use it
 ### Prerequisites
 - Linux
