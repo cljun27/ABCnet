@@ -54,7 +54,7 @@ class Pix2Pix3dModel(BaseModel):
             self.criterionMSE = torch.nn.MSELoss()
             self.criterionReg = smooothing_loss()
             self.criterionCor = CorLoss()
-            self.criterionSeg = SegLoss()
+            self.criterionSeg = SegLoss_pathch()
             # initialize optimizers
             self.optimizer_G = torch.optim.Adam(self.netG.parameters(),
                                                 lr=opt.lr, betas=(opt.beta1, 0.999))
