@@ -29,3 +29,8 @@ python train.py --dataroot /training_data_folder --name project_name --model pix
 
 ```
 python test.py --dataroot /data_folder --name project_name --model pix2pix3d --direction AtoB --dataset_mode unaligned --input_nc 1 --output_nc 1 --gpu_ids 0
+
+### Citations
+If you use this code for your research, please cite as:
+
+Chen, Liangjun, et al. "ABCnet: Adversarial bias correction network for infant brain MR images." Medical Image Analysis 72 (2021): 102133.
